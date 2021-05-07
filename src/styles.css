@@ -1,0 +1,217 @@
+@import url("https://fonts.googleapis.com/css2?family=Pangolin&family=Source+Sans+Pro:ital,wght@1,300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Source Sans Pro", sans-serif;
+}
+.App {
+  background-color: #f4eb9b;
+}
+/* Titulo principal/ header */
+.contTitle {
+  width: 100%;
+  background-color: #8ae8ae;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.title {
+  color: #f4eb9b;
+  font-size: 9vh;
+  padding: 5vh;
+}
+/* Fitros */
+.contentFiltros {
+  width: 100%;
+  height: 15vh;
+  background-color: #f8c979;
+  padding-top: 1%;
+}
+.Filtros {
+  display: flex;
+  justify-content: center;
+  border: solid, 2px, black;
+  width: 70%;
+  justify-items: center;
+  margin: 0 15% 0 15%;
+  justify-content: space-between;
+}
+.filters {
+  background-color: #20dad5;
+  height: 7vh;
+  width: 12vw;
+  border: solid 2px black;
+}
+.filters:hover {
+  cursor: pointer;
+}
+.nombreFiltro {
+  /* background-color: #f4eb9b; */
+  background-color: #f8c979;
+  display: flex;
+  font-size: 1.5vw;
+  justify-content: center;
+}
+.btn {
+  width: 10vw;
+  height: 50px;
+  background-color: #2097d8;
+  cursor: pointer;
+  color: white;
+  margin-top: 28px;
+  padding: 2px;
+  border-radius: 10%;
+  margin-left: 5%;
+}
+.btn:hover {
+  background-color: #8ae8ae;
+  cursor: pointer;
+  color: black;
+  border-radius: 10%;
+}
+/* Hoteles */
+.contHotel {
+  width: 30%;
+  height: 30%;
+  margin: 1%;
+  box-shadow: 0px 10px 10px grey;
+  border-radius: 1%;
+  background-color: white;
+}
+.contHotel:hover {
+  transform: translate(1%, 1%);
+  cursor: pointer;
+  transition-duration: 1s;
+  transition-property: transform;
+}
+.imague-hotel {
+  width: 100%;
+  border-radius: 1%;
+}
+.nombreHotel {
+  display: flex;
+  margin: 0 2% 0 4%;
+  justify-content: center;
+}
+.description {
+  margin: 5%;
+}
+.contenLocation {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  border-radius: 7%;
+  padding: 2%;
+  margin: 0 22% 0 22%;
+  background-color: #8ae8ae;
+}
+.svg-inline--fa {
+  width: 20px;
+  height: 20px;
+  
+}
+.svg-inlinea--fa {
+  color: white;
+  width: 20px;
+  height: 20px;
+ 
+}
+
+.fas {
+  height: 5px;
+  width: 5px;
+  margin: 1%;
+ 
+}
+
+.habitacionesPrecio {
+  display: flex;
+  justify-content: center;
+  display: flex;
+  justify-content: center;
+  margin: 5%;
+}
+.habitaciones {
+  background-color: #8ae8ae;
+  border-radius: 7%;
+}
+#content-price {
+  align-content: center;
+  display: flex;
+  background-color: #8ae8ae;
+  border-radius: 7%;
+  margin-left: 5%;
+  margin-top: 1%;
+  padding: 1%;
+}
+.reservar {
+  width: 98%;
+  height: 8vh;
+  background-color: #2097d8;
+  color: white;
+  font-size: 1.5vw;
+  margin: 1%;
+}
+.reservar:hover {
+  width: 100%;
+  height: 9vh;
+  margin: 0;
+  background-color: #0084ff;
+  cursor: pointer;
+  transition-duration: 1s;
+}
+
+.lista {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 2%;
+}
+.contSinResultado {
+  margin-left: 25%;
+  padding: 5%;
+  border: solid 3px black;
+  width: 50%;
+}
+.sinResultado {
+  align-self: center;
+  font-family: "Pangolin", cursive;
+}
+@media (max-width: 600px) {
+  .Filtros {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .contentFiltros {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 35%;
+  }
+  .filters {
+    width: 100%;
+  }
+  .nombreFiltro {
+    font-size: 5vw;
+  }
+  .btn {
+    width: 100%;
+    margin-left: 0;
+  }
+  .lista {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .contHotel {
+    width: 80%;
+    align-items: center;
+    margin-top: 5%;
+  }
+  .reservar{
+font-size: 2.5vw;
+  }
+}
